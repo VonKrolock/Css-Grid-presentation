@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Presentation</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -12,6 +12,7 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+		
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +26,177 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				
+				<section  data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<img data-src="https://i.ytimg.com/vi/-fDqBEjfzGo/maxresdefault.jpg">
+					<h2>What is CSS Grid</h2>
+					<p>The CSS Grid is a two-dimensional layout system that can handle both rows and columns.</p>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>Why CSS Grid</h2>
+					<ul>
+					<li>CSS Grid make it easier to design web pages without having to use floats and positioning</li>
+					<li>CSS Grid is supported in the latest versions of all major browsers and can be safely used with a fallback</li>
+				</ul>
+				</section>
+
+				<section  data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>Grid vs Flexbox</h2>
+					<p>Unlike Flexbox, CSS Grid is a two-dimensional layout system that can handle both rows and columns.</p>
+					<img data-src="https://res.cloudinary.com/practicaldev/image/fetch/s--OH-SIjBf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://s3-ap-southeast-2.amazonaws.com/tmp.inlight.com.au/assets/Article/flexbox-vs-grid.png">
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>CSS Grid Container</h2>
+					<ul>
+						<li>The grid container is the parent of all grid items.</li>
+						<li>It is declared with the "display: grid" or "display: inline-grid" rule
+							<ul class="fragment">
+								<li><span class="link">grid</span>  – generates a block-level grid</li>
+								<li><span class="link">inline-grid</span>  – generates an inline-level grid</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>CSS Grid Item</h2>
+					<p>The items that are direct children of the grid container. These are the elements that will be placed on the grid.</p>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>CSS Grid Columns and Rows</h2>
+					<ul>
+						<li>The vertical lines of grid items are called columns</li>
+						<li>The horizontal lines of grid items are called rows</li>
+						<img data-src="https://www.w3schools.com/css/grid_columns.png">
+						<img data-src="https://www.w3schools.com/css/grid_rows.png">
+					</ul>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>CSS Grid Lines</h2>
+					<p>The lines that divide the columns and rows of the grid</p>
+					<ul>
+						<li>The lines between columns are called column lines.</li>
+						<li>The lines between rows are called row lines.</li>
+					</ul>
+					<img data-src="https://mozilladevelopers.github.io/playground/static/fb.74b85bb9.png">
+					<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/terminology/grid-lines.jpg">
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>CSS Grid Gaps</h2>
+					<ul>
+						<li>The spaces between each column/row are called gaps</li>
+						<li>You can adjust the gap size by using one of the following properties:
+							<ul class="fragment" data-fragment-index="1">
+								<li><span  class="link">grid-column-gap</span></li>
+								<li><span  class="link">grid-row-gap</span></li>
+								<li><span  class="link">grid-gap</span></li>
+							</ul>
+						</li>
+					</ul>			
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>grid-template-columns</h2>
+					<ul>
+						<li>The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column
+							<ul>
+								<li><span class="link">grid-template-columns: auto auto auto auto</span></li>
+								<li><span class="link">grid-template-columns: 80px 200px auto 40px</span></li>
+							</ul>
+						</li>
+						<li>If you have more than 4 items in a 4 columns grid, the grid will automatically add a new row</li>
+					</ul>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>grid-template-rows</h2>
+					<ul>
+						<li>The grid-template-rows property defines the height of each row</li>
+						<li>The number of rows is determined by the number of values defined in the space-separated list
+							<ul>
+								<li><span class="link">grid-template-rows: 80px 100px</span> - two rows</li>
+								<li><span class="link">grid-template-rows: 80px 100px 150px</span> - three rows</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<section>
+					<h2>grid-column</h2>
+					<ul>
+						<li>The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties</li>
+						<li>The grid-column property defines on which column to place an item</li>
+					</ul>
+				</section>
+					<section>
+						<p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span</p>
+						<ul>
+							<li><span class="link">"grid-column: 1 / span 3"</span>  - start on column 1 and span 3 columns</li>
+							<li><span class="link">"grid-column: 1 / 5"</span> - start on column 1 and end before column 5</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<section>
+					<h2>grid-row</h2>
+					<ul>
+						<li>The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties</li>
+						<li>The grid-row property defines on which row to place an item</li>
+					</section>
+					<section>
+							<p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span</p>
+							<ul>
+								<li><span class="link">"grid-row: 1 / span 2"</span>  - start on row 1 and span 2 rows</li>
+								<li><span class="link">"grid-row: 1 / span 4"</span>  - start on row-line 1 and end on row-line 4</li>
+							</ul>
+						</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>grid-area</h2>
+					<ul>
+						<li>The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties
+							<ul>
+							<li><span class="link">"grid-area: 1 / 2 / 5 / 6"</span> - start on row-line 1 and column-line 2, and end on row-line 5 and column line 6</li>
+						</ul>
+						</li>
+						<li>The grid-area property can also be used to assign names to grid items</li>
+					</ul>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>justify-content</h2>
+					<ul>
+						<li>The justify-content property is used to align the whole grid inside the container</li>
+						<li>The grid's total width has to be less than the container's width for the justify-content property to have any effect</li>
+					</ul>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>align-content</h2>
+					<ul>
+						<li>The align-content property is used to vertically align the whole grid inside the container</li>
+						<li>The grid's total height has to be less than the container's height for the align-content property to have any effect</li>
+					</ul>
+				</section>
+
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<h2>place-content</h2>
+					<ul>
+						<li>place-content sets both the align-content and justify-content properties in a single declaration</li>
+						<li> The first value sets align-content, the second value justify-content. If the second value is omitted, the first value is assigned to both properties</li>
+					</ul>
+				</section>
+
 			</div>
 		</div>
 
