@@ -34,11 +34,31 @@
 				</section>
 
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
-					<h2>Why CSS Grid</h2>
-					<ul>
-					<li>CSS Grid make it easier to design web pages without having to use floats and positioning</li>
-					<li>CSS Grid is supported in the latest versions of all major browsers and can be safely used with a fallback</li>
-				</ul>
+					<section>
+						<h2>Why CSS Grid</h2>
+					</section>
+					<section>
+						<ul>
+							<li>CSS Grid make it easier to design web pages without having to use floats and positioning.
+								CSS Grid allows web developers to create complex responsive web design layouts more easily and consistently across browsers</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								CSS Grid is fully responsive
+							</li>
+						</ul>
+						<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/responsive-grid.gif" alt="">
+					</section>
+					<section>
+						<ul>
+							<li>
+								CSS Grid is supported in the latest versions of all major browsers and can be safely used with a fallback
+							</li>
+						</ul>
+						<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/caniuse-data.png" alt="">
+					</section>				
 				</section>
 
 				<section  data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
@@ -51,28 +71,29 @@
 					<h2>CSS Grid Container</h2>
 					<ul>
 						<li>The grid container is the parent of all grid items.</li>
-						<li>It is declared with the "display: grid" or "display: inline-grid" rule
-							<ul class="fragment">
-								<li><span class="link">grid</span>  – generates a block-level grid</li>
-								<li><span class="link">inline-grid</span>  – generates an inline-level grid</li>
-							</ul>
-						</li>
+						<li>It is declared with the "display: grid" or "display: inline-grid" rule</li>
 					</ul>
+					<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/terminology/grid-container.jpg">
 				</section>
 
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
 					<h2>CSS Grid Item</h2>
 					<p>The items that are direct children of the grid container. These are the elements that will be placed on the grid.</p>
+					<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/terminology/grid-item.jpg">
 				</section>
 
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
-					<h2>CSS Grid Columns and Rows</h2>
-					<ul>
-						<li>The vertical lines of grid items are called columns</li>
-						<li>The horizontal lines of grid items are called rows</li>
+					<section>
+						<h2>CSS Grid Columns and Rows</h2>
+					</section>
+					<section>
+						<p>The vertical lines of grid items are called columns</p>
 						<img data-src="https://www.w3schools.com/css/grid_columns.png">
+				  </section> 
+					<section>
+						<p>The horizontal lines of grid items are called rows</p>
 						<img data-src="https://www.w3schools.com/css/grid_rows.png">
-					</ul>
+					</section>
 				</section>
 
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
@@ -82,10 +103,46 @@
 						<li>The lines between columns are called column lines.</li>
 						<li>The lines between rows are called row lines.</li>
 					</ul>
-					<img data-src="https://mozilladevelopers.github.io/playground/static/fb.74b85bb9.png">
 					<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/terminology/grid-lines.jpg">
 				</section>
 
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<section>
+						<h2>CSS Grid Units</h2>
+					</section>
+					<section>
+						<h2>The Fr Unit</h2>
+						<p>With CSS Grid Layout, we get a new flexible unit: the Fr unit and 1fr is for 1 part of the available space.</p>
+						<ul>
+							<li class="link">grid-template-columns: 1fr 1fr 1fr 1fr;</li>
+						</ul>
+						<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/fr-and-repeat.png">
+					</section>
+					
+					<section>
+						<h2>The Repeat()Function</h2>
+						<p> If you find yourself repeating length units, use the CSS repeat() function. Rewrite the above code like so:</p>
+						<ul>
+							<li class="link">grid-template-columns: repeat(4, 1fr);</li>
+						</ul>
+						<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/fr-and-repeat.png">
+					</section>
+
+					<section>
+						<h2>Mixing Units</h2>
+						<p> CSS Grid also allows us to mix units</p>
+						<ul>
+							<li class="link">grid-template-columns: repeat(2, 150px) 1fr;</li>
+						</ul>
+						<img data-src="https://danielwrobert.github.io/getting-started-with-css-grid/images/mixing-units.png">
+					</section>
+				</section>
+				
+				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
+					<section>
+						<h2>CSS Grid Properties</h2>
+					</section>
+					
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
 					<h2>CSS Grid Gaps</h2>
 					<ul>
@@ -117,7 +174,7 @@
 					<h2>grid-template-rows</h2>
 					<ul>
 						<li>The grid-template-rows property defines the height of each row</li>
-						<li>The number of rows is determined by the number of values defined in the space-separated list
+						<li>The number of rows is determined by the number of values defined in the list
 							<ul>
 								<li><span class="link">grid-template-rows: 80px 100px</span> - two rows</li>
 								<li><span class="link">grid-template-rows: 80px 100px 150px</span> - three rows</li>
@@ -127,44 +184,35 @@
 				</section>
 
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
-					<section>
 					<h2>grid-column</h2>
 					<ul>
 						<li>The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties</li>
 						<li>The grid-column property defines on which column to place an item</li>
+						<li>To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span
+							<ul>
+								<li><span class="link">"grid-column: 1 / span 3"</span>  - start on column 1 and span 3 columns</li>
+							</ul>
+						</li>
 					</ul>
-				</section>
-					<section>
-						<p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span</p>
-						<ul>
-							<li><span class="link">"grid-column: 1 / span 3"</span>  - start on column 1 and span 3 columns</li>
-							<li><span class="link">"grid-column: 1 / 5"</span> - start on column 1 and end before column 5</li>
-						</ul>
-					</section>
 				</section>
 
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
-					<section>
 					<h2>grid-row</h2>
 					<ul>
 						<li>The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties</li>
 						<li>The grid-row property defines on which row to place an item</li>
-					</section>
-					<section>
-							<p>To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span</p>
+						<li>To place an item, you can refer to line numbers, or use the keyword "span" to define how many rows the item will span
 							<ul>
 								<li><span class="link">"grid-row: 1 / span 2"</span>  - start on row 1 and span 2 rows</li>
-								<li><span class="link">"grid-row: 1 / span 4"</span>  - start on row-line 1 and end on row-line 4</li>
 							</ul>
 						</li>
-						</ul>
-					</section>
+					</ul>
 				</section>
 
 				<section data-background-image="https://res.cloudinary.com/dm0jn7d2r/image/upload/v1586682729/lukebrown.io/banner-with-gradient.png" data-background-position='center' data-background-size="cover" data-background-opacity='.3'>
 					<h2>grid-area</h2>
 					<ul>
-						<li>The grid-area property can be used as a shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties
+						<li>The grid-area property can be used as a shorthand property for the grid-row/column-start and the grid-row/column-end properties
 							<ul>
 							<li><span class="link">"grid-area: 1 / 2 / 5 / 6"</span> - start on row-line 1 and column-line 2, and end on row-line 5 and column line 6</li>
 						</ul>
@@ -196,6 +244,7 @@
 						<li> The first value sets align-content, the second value justify-content. If the second value is omitted, the first value is assigned to both properties</li>
 					</ul>
 				</section>
+			</section>
 
 			</div>
 		</div>
